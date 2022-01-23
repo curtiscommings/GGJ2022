@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elements:
   - _speaker: Human Female
-    _content: sushi toyota pikachu
+    _content: 子他妈的? 子他妈的?
     _isPrompt: 0
     _promptPrefab: {fileID: 0}
   - _speaker: 
