@@ -3,9 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerInventory")]
-public class PlayerInventory : MonoBehaviour
+public class PlayerInventory : ScriptableObject
 {
     public List<Item> _itemList;
+
+    public void AddItem(Item i_itemToAdd)
+    {
+        if (!_itemList.Contains(i_itemToAdd))
+            _itemList.Add(i_itemToAdd);
+    }
+
+    public void RemoveItem(Item i_itemToRemove)
+    {
+        if (_itemList.Contains(i_itemToRemove))
+            _itemList.Remove(i_itemToRemove);
+    }
 
     public bool PlayerHasItem(Item i_itemToCheck)
     {
