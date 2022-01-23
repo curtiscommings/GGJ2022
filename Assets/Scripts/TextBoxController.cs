@@ -24,6 +24,11 @@ public class TextBoxController : MonoBehaviour
         _tmPro.text = i_message;
     }
 
+    public void ShowMessage(DialogMessage i_message)
+    {
+        _tmPro.text = i_message._content;
+    }
+
     public void ClearTextBox()
     {
         _tmPro.text = "";
