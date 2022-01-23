@@ -2524,7 +2524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b106cbaf92bef994b981ee6388ced178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialog: {fileID: 11400000, guid: 6c8a4c684f074744da9bd1ce0b371b9f, type: 2}
+  _dialog: {fileID: 11400000, guid: 0edc67b5dcdbb2d6aaf0a9a1d054c5a1, type: 2}
   _textEvent: {fileID: 11400000, guid: 0b7cfcc44783dfa4090f75a41a2170b6, type: 2}
   _speakerTextEvent: {fileID: 11400000, guid: 5d5d2e99ff83b924eb9c0dab92aaa4c8, type: 2}
   _onDialogEnd: {fileID: 11400000, guid: 969167e40d15d5d408c74d3c2571d21e, type: 2}
@@ -2791,7 +2791,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 6d9a0af17be437d44811e04c5f8a2bc4, type: 2}
         m_TargetAssemblyTypeName: Quest, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnAcceptQuest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

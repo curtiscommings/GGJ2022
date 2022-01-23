@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: StMichael
   m_EditorClassIdentifier: 
   elements:
-  - _speaker: asdf
-    _content: this is the end.
+  - _speaker: St. Michael the Archangel
+    _content: 'A thousand gratitudes, my LORD. '
     _isPrompt: 0
     _promptPrefab: {fileID: 0}
   curIndx: 0

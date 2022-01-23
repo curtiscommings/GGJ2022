@@ -16,5 +16,5 @@ MonoBehaviour:
   Name: 
   Description: 
   questStartDialog: {fileID: 11400000, guid: a4ca24f70381f8c55bb54b049936ad89, type: 2}
-  questInProgressDialog: {fileID: 0}
-  finishQuestDialong: {fileID: 0}
+  questInProgressDialog: {fileID: 11400000, guid: ce7ba1573653a056e8c5eb6953d73703, type: 2}
+  finishQuestDialong: {fileID: 11400000, guid: cf781c70c366252c5991a90419ed914e, type: 2}
