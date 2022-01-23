@@ -20,6 +20,7 @@ public class DialogPromptSpawner : MonoBehaviour
 
     public void SpawnPrompt(GameObject i_prompt)
     {
+        Debug.Log("SpawningPrompt");
         _spawnedPrompt = GameObject.Instantiate(i_prompt, this.transform);
     }
 

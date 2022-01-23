@@ -9,10 +9,13 @@ public class Interactable : MonoBehaviour
     [SerializeField] private GameEventBase<string> _textEvent;
     [SerializeField] private GameEventBase<string> _speakerTextEvent;
     [SerializeField] private GameEvent _onDialogEnd;
+    [SerializeField] private GameEventBase<GameObject> _spawnPromptEvent;
+
 
     [SerializeField] private Quest _quest;
 
     private bool _canUse = false;
+    private bool _waitingForInput = false;
     private DialogMessage _lastMessage;
     // Start is called before the first frame update
     void Start()
@@ -34,17 +37,23 @@ public class Interactable : MonoBehaviour
                 ProcessQuestDialog();
             else
             {
-                if (_lastMessage._isPrompt)
+                if (!_waitingForInput)
                 {
 
-                }
-                else
-                {
-
+                    Debug.Log("No quest here");
                     var message = _dialog.AdvanceText();
                     _textEvent.Raise(message._content);
                     _speakerTextEvent.Raise(message._speaker);
-                    _lastMessage = message;
+                    if (message._isPrompt)
+                    {
+                        _waitingForInput = true;
+                        _spawnPromptEvent.Raise(message._promptPrefab);
+                    }
+                }
+                else
+                {
+                    _onDialogEnd.Raise();
+                    _canUse = false;
                 }
             }
 
@@ -64,6 +73,7 @@ public class Interactable : MonoBehaviour
                 break;
             case Quest.State.TURN_IN:
                 message = _quest.finishQuestDialong.AdvanceText();
+                _quest.OnCompleteQuest();
                 break;
             case Quest.State.ACCEPTED:
                 message = _quest.questInProgressDialog.AdvanceText();
@@ -81,9 +91,12 @@ public class Interactable : MonoBehaviour
             _onDialogEnd.Raise();
             _canUse = false;
         }
+        else
+        {
+            _textEvent.Raise(message._content);
+            _speakerTextEvent.Raise(message._speaker);
+        }
 
-        _textEvent.Raise(message._content);
-        _speakerTextEvent.Raise(message._speaker);
     }
 
     private void OnTriggerEnter(Collider other)

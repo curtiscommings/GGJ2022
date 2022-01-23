@@ -47,6 +47,11 @@ public class Quest : ScriptableObject
         if (questProgress == State.TURN_IN)
             questProgress = State.COMPLETED;
     }
+
+    public void ResetQuest()
+    {
+        questProgress = State.READY;
+    }
 }
 
 [CreateAssetMenu(fileName = "QuestList")]
