@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0e1760d33d90d45950a0ddc03c8a18, type: 3}
   m_Name: CollectCatPissAccept
   m_EditorClassIdentifier: 
-  elements: []
+  elements:
+  - _speaker: St. Raphael the Archangel
+    _content: "What\u2019s good, Jeezy? I guzzled all my fucking cat piss, think
+      you can score me some more? Out here FIENDIN\u2019."
+    _isPrompt: 0
+    _promptPrefab: {fileID: 0}
   curIndx: 0

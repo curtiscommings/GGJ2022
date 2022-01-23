@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0e1760d33d90d45950a0ddc03c8a18, type: 3}
   m_Name: CollectHumanShitAccept
   m_EditorClassIdentifier: 
-  elements: []
+  elements:
+  - _speaker: YHWH
+    _content: BOY.
+    _isPrompt: 0
+    _promptPrefab: {fileID: 0}
+  - _speaker: YHWH
+    _content: GO FORTH AND RENDER UNTO THE LORD THE SHIT OF MAN.
+    _isPrompt: 0
+    _promptPrefab: {fileID: 0}
   curIndx: 0

@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0e1760d33d90d45950a0ddc03c8a18, type: 3}
   m_Name: CollectHumanPissAccept
   m_EditorClassIdentifier: 
-  elements: []
+  elements:
+  - _speaker: The Holy Spirit
+    _content: "JOSH BRAH, fucking RAGER happening tonight. I told the boys you\u2019re
+      gonna be coming through with that DIRTY loaded piss, don\u2019t let us down
+      dog. "
+    _isPrompt: 0
+    _promptPrefab: {fileID: 0}
   curIndx: 0
