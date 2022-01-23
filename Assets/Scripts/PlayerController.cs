@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _movementSpeed;
     [SerializeField] private GameEvent _interactionEventChannel;
     [SerializeField] private TextMeshPro _myTMP;
+    [SerializeField] private QuestList _playerQuestList;
+
+    private bool _canMove = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,5 +45,15 @@ public class PlayerController : MonoBehaviour
         Debug.Log("doink");
 
         _interactionEventChannel.Raise();
+    }
+
+    public void RestrictMovement()
+    {
+        _canMove = false;
+    }
+
+    public void RestoreMovement()
+    {
+        _canMove = true;
     }
 }

@@ -23,4 +23,5 @@ public class TextBoxController : MonoBehaviour
     {
         _tmPro.text = i_message;
     }
+
 }
