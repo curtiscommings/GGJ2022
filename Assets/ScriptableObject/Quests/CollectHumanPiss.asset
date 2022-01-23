@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f63bcdd1ee1c0745bed71fd1bdb3379, type: 3}
   m_Name: CollectHumanPiss
   m_EditorClassIdentifier: 
-  questProgress: 0
+  questProgress: 1
   Name: 
   Description: 
-  questStartDialog: {fileID: 0}
+  questStartDialog: {fileID: 11400000, guid: bbcdcd734cd9d651f9beb9442372c0ae, type: 2}
   questInProgressDialog: {fileID: 0}
   finishQuestDialong: {fileID: 0}
