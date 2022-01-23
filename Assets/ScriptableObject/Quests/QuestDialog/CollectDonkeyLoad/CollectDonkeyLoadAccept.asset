@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0e1760d33d90d45950a0ddc03c8a18, type: 3}
+  m_Name: CollectDonkeyLoadAccept
+  m_EditorClassIdentifier: 
+  elements:
+  - _speaker: St. Gabriel the Archangel
+    _content: "Oh gee, howdy there Mr. Christ! Say, it sure would be swell if you
+      could pick up a sloppy ol\u2019 donkey load for me next time you\u2019re on
+      Earth. Just the fattest, stinkiest wad you can find would be peachy."
+    _isPrompt: 0
+    _promptPrefab: {fileID: 0}
+  curIndx: 0
