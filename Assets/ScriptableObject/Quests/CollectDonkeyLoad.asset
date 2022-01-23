@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f63bcdd1ee1c0745bed71fd1bdb3379, type: 3}
   m_Name: CollectDonkeyLoad
   m_EditorClassIdentifier: 
-  questProgress: 4
+  questProgress: 1
   Name: 
   Description: 
   questStartDialog: {fileID: 11400000, guid: f885f3685cfcc27b4b1756c403da0851, type: 2}
