@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: DogShitInProgress
   m_EditorClassIdentifier: 
   elements:
-  - _speaker: Michael
-    _content: What are you doing?
-  - _speaker: Michael
-    _content: Bring me that dog shit.
+  - _speaker: St. Michael the Archangel
+    _content: 'My LORD, how fares your quest for the dog shit? '
+    _isPrompt: 0
+    _promptPrefab: {fileID: 0}
+  curIndx: 0

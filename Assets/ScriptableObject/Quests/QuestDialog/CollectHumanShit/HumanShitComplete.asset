@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e0e1760d33d90d45950a0ddc03c8a18, type: 3}
-  m_Name: DogShitComplete
+  m_Name: HumanShitComplete
   m_EditorClassIdentifier: 
   elements:
-  - _speaker: St. Michael the Archangel
-    _content: 'My LORD! My heart leaps with joy at the smell of that precious dog
-      shit. '
+  - _speaker: YHWH
+    _content: 'BEHOLD: THE SHIT OF MAN.'
     _isPrompt: 0
     _promptPrefab: {fileID: 0}
   - _speaker: 
-    _content: 'You hand over the Celestial Container of Dog Shit. '
+    _content: "The Celestial Container of Human Shit vanishes from your possessions.
+      It\u2019s probably in your dad\u2019s ass now."
     _isPrompt: 0
     _promptPrefab: {fileID: 0}
-  curIndx: 0
+  curIndx: 1
